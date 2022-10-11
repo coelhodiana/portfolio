@@ -1,1 +1,20 @@
-<h1>Boilerplate Angular</h1>
+<nav class="navbar">
+  <p>Diana Coelho</p>
+  <span class="navbar__subtitle">Designer & Desenvolvedora</span>
+</nav>
+
+<main class="container">
+  <app-hero></app-hero>
+</main>
+
+<section class="container">
+  <div class="work">
+    <h1>Portfólio</h1>
+
+    <ng-container *ngIf="works$ | async as works">
+      <div *ngFor="let work of works">
+        <app-work [work]="work"></app-work>
+      </div>
+    </ng-container>
+  </div>
+</section>
