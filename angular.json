@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "boilerplate-angular": {
+    "portfolio-diana": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/boilerplate-angular",
+            "outputPath": "dist/portfolio-diana",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "boilerplate-angular:build:production"
+              "browserTarget": "portfolio-diana:build:production"
             },
             "development": {
-              "browserTarget": "boilerplate-angular:build:development"
+              "browserTarget": "portfolio-diana:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "boilerplate-angular:build"
+            "browserTarget": "portfolio-diana:build"
           }
         },
         "test": {
@@ -89,11 +89,11 @@
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "boilerplate-angular:serve"
+            "devServerTarget": "portfolio-diana:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "boilerplate-angular:serve:production"
+              "devServerTarget": "portfolio-diana:serve:production"
             }
           }
         },
@@ -107,27 +107,27 @@
         "ct": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "boilerplate-angular:serve",
+            "devServerTarget": "portfolio-diana:serve",
             "watch": true,
             "headless": false,
             "testingType": "component"
           },
           "configurations": {
             "development": {
-              "devServerTarget": "boilerplate-angular:serve:development"
+              "devServerTarget": "portfolio-diana:serve:development"
             }
           }
         },
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "boilerplate-angular:serve",
+            "devServerTarget": "portfolio-diana:serve",
             "watch": true,
             "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "boilerplate-angular:serve:production"
+              "devServerTarget": "portfolio-diana:serve:production"
             }
           }
         },
