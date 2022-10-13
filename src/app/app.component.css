@@ -1,0 +1,27 @@
+.navbar {
+  padding: 1rem;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+.navbar__subtitle {
+  color: rgb(124, 124, 124);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 425px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__subtitle {
+    padding-left: 0.6rem;
+  }
+}/*# sourceMappingURL=app.component.css.map */

@@ -1,0 +1,36 @@
+.work {
+  margin-bottom: 2rem;
+}
+.work__img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.work__img img {
+  width: 100%;
+  height: auto;
+}
+.work__content h2,
+.work__content p {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .work {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .work__img, .work__content {
+    flex: 1;
+    margin: 0;
+  }
+  .work__img img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=work.component.css.map */
